@@ -1,0 +1,319 @@
+<?xml version="1.0"?>
+<project name="" company="" manager="" phase="" project-start="20200217T000000Z" mrproject-version="2" calendar="1">
+  <properties/>
+  <phases/>
+  <calendars>
+    <day-types>
+      <day-type id="0" name="Working" description="A default working day"/>
+      <day-type id="1" name="Nonworking" description="A default non working day"/>
+      <day-type id="2" name="Use base" description="Use day from base calendar"/>
+    </day-types>
+    <calendar id="1" name="Default">
+      <default-week mon="0" tue="0" wed="0" thu="0" fri="0" sat="1" sun="1"/>
+      <overridden-day-types>
+        <overridden-day-type id="0">
+          <interval start="0800" end="1200"/>
+          <interval start="1300" end="1700"/>
+        </overridden-day-type>
+      </overridden-day-types>
+      <days/>
+    </calendar>
+  </calendars>
+  <tasks>
+    <task id="1" name="Project Concept and Set-up" note="" work="75600" start="20200217T000000Z" end="20200218T100000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="2" name="Prepare project plan" note="" work="57600" start="20200217T000000Z" end="20200217T120000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="3" name="Prepare Development Environment" note="" work="18000" start="20200218T000000Z" end="20200218T100000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="4" name="Create project git repository on server" note="" work="3600" start="20200218T000000Z" end="20200218T090000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <constraint type="must-start-on" time="20200218T000000Z"/>
+        </task>
+        <task id="5" name="Create local git repositories by cloning global repository on server" note="" work="14400" start="20200218T090000Z" end="20200218T100000Z" work-start="20200218T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="4" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="6" name="Requirements and Architecture" note="" work="72000" start="20200217T000000Z" end="20200217T114000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="7" name="Prioritize requirements/use cases (must have MVP/nice to have MLP)" note="" work="14400" start="20200217T000000Z" end="20200217T090000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="8" name="Design application architecture - web app?mobile app?db structure (embedded lists vs db)" note="" work="14400" start="20200217T000000Z" end="20200217T090000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="9" name="Create logical Data model (UML)" note="" work="14400" start="20200217T000000Z" end="20200217T090000Z" work-start="20200217T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="10" name="Investigate OCR libraries and complexity to use those to obtain data" note="" work="28800" start="20200217T090000Z" end="20200217T114000Z" work-start="20200217T090000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <predecessors>
+          <predecessor id="1" predecessor-id="8" type="FS"/>
+        </predecessors>
+      </task>
+    </task>
+    <task id="11" name="Design - MVP" note="" work="36000" start="20200218T000000Z" end="20200218T090000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="12" name="Create UI design/wireframe flow/stlye" note="" work="14400" start="20200218T000000Z" end="20200218T090000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="13" name="Design for Product form" note="" work="1800" start="20200218T000000Z" end="20200218T083000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="14" name="Design for Recipe form" note="" work="1800" start="20200218T000000Z" end="20200218T083000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="15" name="Design for Check Inventory form" note="" work="1800" start="20200218T000000Z" end="20200218T083000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="16" name="Design for Search and Rank recipes for plan" note="" work="1800" start="20200218T000000Z" end="20200218T083000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="17" name="Finalize design" note="" work="14400" start="20200218T000000Z" end="20200218T090000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+    </task>
+    <task id="18" name="Build - Test - MVP" note="" work="482400" start="20200218T000000Z" end="20200221T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <task id="19" name="Create initial DB structure and populate with initial data" note="" work="7200" start="20200218T000000Z" end="20200218T100000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="20" name="Generate initial classes" note="" work="14400" start="20200218T000000Z" end="20200218T092000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="21" name="Initial project and structure prepared" note="" work="0" start="20200218T000000Z" end="20200218T000000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+        <constraint type="must-start-on" time="20200218T000000Z"/>
+      </task>
+      <task id="22" name="Use Case -  Add/Modify/Remove Product" note="" work="86400" start="20200218T000000Z" end="20200221T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="23" name="Implement Product class methods" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="24" name="Write unit tests for Product class" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="25" name="Push to master/integrate - add/remove Product" note="" work="28800" start="20200220T170000Z" end="20200221T170000Z" work-start="20200221T080000Z" percent-complete="22" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="24" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="26" name="Use Case - Add/Modify/Remove Recipe" note="" work="86400" start="20200218T000000Z" end="20200221T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="27" name="Implement Recipe class methods" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="28" name="Write unit tests for Recipe class" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="29" name="Push to master/integrate - add/remove recipes" note="" work="28800" start="20200220T170000Z" end="20200221T170000Z" work-start="20200221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="28" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="30" name="Use Case - Create Meal Plan for selected period" note="" work="86400" start="20200218T000000Z" end="20200221T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="31" name="Implement Meal Plan class and methods" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="32" name="Write unit tests for Meal Plan" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="33" name="Push to master/integrat - meal plan" note="" work="28800" start="20200220T170000Z" end="20200221T170000Z" work-start="20200221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="32" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="34" name="Use Case - Search and rank recipes for meal plan" note="" work="115200" start="20200218T000000Z" end="20200221T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="35" name="Create search method - search for recipes" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="36" name="Create ranking method for found recipes" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="37" name="Write unit tests for search and rank recipes" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="38" name="Push to master - Search and rank recipes" note="" work="28800" start="20200220T170000Z" end="20200221T170000Z" work-start="20200221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="37" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+      <task id="39" name="Use Case - Generate Shopping List" note="" work="86400" start="20200218T000000Z" end="20200221T100000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+        <task id="40" name="Implement Shopping List class and methods" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="41" name="Write unit tests for generating shopping list based on selected recipes" note="" work="28800" duration="86400" start="20200218T000000Z" end="20200220T170000Z" work-start="20200218T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+          <predecessors>
+            <predecessor id="1" predecessor-id="21" type="FS"/>
+          </predecessors>
+        </task>
+        <task id="42" name="Push to master - generate Shopping list" note="" work="28800" start="20200220T170000Z" end="20200221T100000Z" work-start="20200221T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+          <predecessors>
+            <predecessor id="1" predecessor-id="41" type="FS"/>
+          </predecessors>
+        </task>
+      </task>
+    </task>
+    <task id="43" name="Initial implementation complete" note="" work="0" start="20200221T170000Z" end="20200221T170000Z" work-start="20200221T170000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="42" type="FS"/>
+        <predecessor id="1" predecessor-id="38" type="FS"/>
+        <predecessor id="1" predecessor-id="33" type="FS"/>
+        <predecessor id="1" predecessor-id="29" type="FS"/>
+        <predecessor id="1" predecessor-id="25" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="44" name="System Test - MVP" note="" work="86400" start="20200221T170000Z" end="20200224T120000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="43" type="FS"/>
+      </predecessors>
+      <task id="45" name="Positive &amp; Negative Tests" note="" work="28800" start="20200221T170000Z" end="20200224T100000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="46" name="Fix Bugs" note="" work="57600" start="20200221T170000Z" end="20200224T120000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="47" name="System Tests Passed" note="" work="0" start="20200224T120000Z" end="20200224T120000Z" work-start="20200224T120000Z" percent-complete="0" priority="0" type="milestone" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="46" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="48" name="Create user and administrator guides" note="" work="28800" start="20200224T120000Z" end="20200224T150000Z" work-start="20200224T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="47" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="49" name="Create project presentation" note="" work="28800" start="20200224T150000Z" end="20200224T170000Z" work-start="20200224T150000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="48" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="50" name="Design - Build - Test - MLP ( Contingency)" note="" work="172800" start="20200221T170000Z" end="20200226T170000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="43" type="FS"/>
+      </predecessors>
+      <task id="51" name="Use Case - Extract Product list (amount, product and price) from shop receit (image to text)" note="" work="86400" start="20200221T170000Z" end="20200226T170000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+      <task id="52" name="Use Case - Extract Recipe (products/amount and preparation) and from your favorite recipe webpage" note="" work="86400" start="20200221T170000Z" end="20200226T170000Z" work-start="20200224T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work"/>
+    </task>
+    <task id="53" name="Deploy" note="" work="28800" start="20200224T120000Z" end="20200224T150000Z" work-start="20200224T120000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <predecessors>
+        <predecessor id="1" predecessor-id="47" type="FS"/>
+      </predecessors>
+    </task>
+    <task id="54" name="Security Workshop" note="" work="28800" start="20200227T000000Z" end="20200227T100000Z" work-start="20200227T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20200227T000000Z"/>
+    </task>
+    <task id="55" name="Present Solution" note="" work="28800" duration="28800" start="20200228T000000Z" end="20200228T170000Z" work-start="20200228T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-duration">
+      <constraint type="must-start-on" time="20200228T000000Z"/>
+    </task>
+  </tasks>
+  <resource-groups/>
+  <resources>
+    <resource id="1" name="Marija" short-name="" type="1" units="0" email="" note="" std-rate="300"/>
+    <resource id="2" name="Martins" short-name="" type="1" units="0" email="" note="" std-rate="300"/>
+    <resource id="3" name="Aleksandrs" short-name="" type="1" units="0" email="" note="" std-rate="300"/>
+    <resource id="4" name="Sigita" short-name="" type="1" units="0" email="" note="" std-rate="300"/>
+  </resources>
+  <allocations>
+    <allocation task-id="5" resource-id="1" units="100"/>
+    <allocation task-id="2" resource-id="1" units="100"/>
+    <allocation task-id="16" resource-id="1" units="100"/>
+    <allocation task-id="9" resource-id="1" units="100"/>
+    <allocation task-id="8" resource-id="1" units="100"/>
+    <allocation task-id="7" resource-id="1" units="100"/>
+    <allocation task-id="10" resource-id="1" units="100"/>
+    <allocation task-id="55" resource-id="1" units="25"/>
+    <allocation task-id="49" resource-id="1" units="100"/>
+    <allocation task-id="54" resource-id="1" units="100"/>
+    <allocation task-id="53" resource-id="1" units="100"/>
+    <allocation task-id="48" resource-id="1" units="100"/>
+    <allocation task-id="45" resource-id="1" units="100"/>
+    <allocation task-id="42" resource-id="1" units="100"/>
+    <allocation task-id="41" resource-id="1" units="8"/>
+    <allocation task-id="40" resource-id="1" units="8"/>
+    <allocation task-id="25" resource-id="1" units="100"/>
+    <allocation task-id="24" resource-id="1" units="33"/>
+    <allocation task-id="23" resource-id="1" units="33"/>
+    <allocation task-id="20" resource-id="1" units="100"/>
+    <allocation task-id="46" resource-id="1" units="100"/>
+    <allocation task-id="17" resource-id="1" units="100"/>
+    <allocation task-id="13" resource-id="1" units="100"/>
+    <allocation task-id="12" resource-id="1" units="100"/>
+    <allocation task-id="4" resource-id="2" units="100"/>
+    <allocation task-id="5" resource-id="2" units="100"/>
+    <allocation task-id="2" resource-id="2" units="100"/>
+    <allocation task-id="9" resource-id="2" units="100"/>
+    <allocation task-id="8" resource-id="2" units="100"/>
+    <allocation task-id="7" resource-id="2" units="100"/>
+    <allocation task-id="10" resource-id="2" units="100"/>
+    <allocation task-id="42" resource-id="2" units="100"/>
+    <allocation task-id="41" resource-id="2" units="8"/>
+    <allocation task-id="40" resource-id="2" units="8"/>
+    <allocation task-id="55" resource-id="2" units="25"/>
+    <allocation task-id="49" resource-id="2" units="100"/>
+    <allocation task-id="54" resource-id="2" units="100"/>
+    <allocation task-id="53" resource-id="2" units="100"/>
+    <allocation task-id="48" resource-id="2" units="100"/>
+    <allocation task-id="45" resource-id="2" units="100"/>
+    <allocation task-id="29" resource-id="2" units="100"/>
+    <allocation task-id="28" resource-id="2" units="33"/>
+    <allocation task-id="27" resource-id="2" units="33"/>
+    <allocation task-id="20" resource-id="2" units="100"/>
+    <allocation task-id="46" resource-id="2" units="100"/>
+    <allocation task-id="17" resource-id="2" units="100"/>
+    <allocation task-id="14" resource-id="2" units="100"/>
+    <allocation task-id="12" resource-id="2" units="100"/>
+    <allocation task-id="5" resource-id="3" units="100"/>
+    <allocation task-id="2" resource-id="3" units="100"/>
+    <allocation task-id="9" resource-id="3" units="100"/>
+    <allocation task-id="8" resource-id="3" units="100"/>
+    <allocation task-id="7" resource-id="3" units="100"/>
+    <allocation task-id="10" resource-id="3" units="100"/>
+    <allocation task-id="42" resource-id="3" units="100"/>
+    <allocation task-id="41" resource-id="3" units="8"/>
+    <allocation task-id="40" resource-id="3" units="8"/>
+    <allocation task-id="55" resource-id="3" units="25"/>
+    <allocation task-id="49" resource-id="3" units="100"/>
+    <allocation task-id="54" resource-id="3" units="100"/>
+    <allocation task-id="53" resource-id="3" units="100"/>
+    <allocation task-id="48" resource-id="3" units="100"/>
+    <allocation task-id="45" resource-id="3" units="100"/>
+    <allocation task-id="33" resource-id="3" units="100"/>
+    <allocation task-id="32" resource-id="3" units="33"/>
+    <allocation task-id="31" resource-id="3" units="33"/>
+    <allocation task-id="20" resource-id="3" units="100"/>
+    <allocation task-id="46" resource-id="3" units="100"/>
+    <allocation task-id="17" resource-id="3" units="100"/>
+    <allocation task-id="15" resource-id="3" units="100"/>
+    <allocation task-id="12" resource-id="3" units="100"/>
+    <allocation task-id="5" resource-id="4" units="100"/>
+    <allocation task-id="2" resource-id="4" units="100"/>
+    <allocation task-id="40" resource-id="4" units="8"/>
+    <allocation task-id="9" resource-id="4" units="100"/>
+    <allocation task-id="8" resource-id="4" units="100"/>
+    <allocation task-id="7" resource-id="4" units="100"/>
+    <allocation task-id="42" resource-id="4" units="100"/>
+    <allocation task-id="41" resource-id="4" units="8"/>
+    <allocation task-id="55" resource-id="4" units="25"/>
+    <allocation task-id="49" resource-id="4" units="100"/>
+    <allocation task-id="54" resource-id="4" units="100"/>
+    <allocation task-id="53" resource-id="4" units="100"/>
+    <allocation task-id="48" resource-id="4" units="100"/>
+    <allocation task-id="45" resource-id="4" units="100"/>
+    <allocation task-id="38" resource-id="4" units="100"/>
+    <allocation task-id="37" resource-id="4" units="33"/>
+    <allocation task-id="36" resource-id="4" units="33"/>
+    <allocation task-id="35" resource-id="4" units="33"/>
+    <allocation task-id="19" resource-id="4" units="100"/>
+    <allocation task-id="46" resource-id="4" units="100"/>
+    <allocation task-id="17" resource-id="4" units="100"/>
+    <allocation task-id="12" resource-id="4" units="100"/>
+  </allocations>
+</project>
