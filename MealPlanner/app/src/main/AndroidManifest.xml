@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="MEAL PLANNER"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activities.SearchProductNutritionFacts"></activity>
+        <activity android:name=".activities.UpdateRecipeProduct" />
+        <activity android:name=".activities.RecipeProductList" />
+        <activity android:name=".activities.RecipeDetailsEditProducts" />
+        <activity android:name=".activities.CheckInventory" />
+        <activity android:name=".activities.AddProduct" />
+        <activity android:name=".activities.AddProductToRecipe" />
+        <activity android:name=".activities.AddRecipe" />
+        <activity android:name=".activities.AllRecipes" />
+        <activity android:name=".activities.UpdateRecipe" />
+        <activity android:name=".activities.ShoppingList" />
+        <activity android:name=".activities.RecipesList" />
+        <activity android:name=".activities.RecipeDetails" />
+        <activity android:name=".activities.UpdateProduct" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
